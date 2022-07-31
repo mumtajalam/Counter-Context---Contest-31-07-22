@@ -5,7 +5,7 @@ const counterContext = createContext();
 const CounterStateContext = (props) => {
   return (
     <div id="counter-context">
-      <counterContext.Provider value={{ count, setCount }}>
+      <counterContext.Provider value={{ count: 0, onclick }}>
         {props.children}
       </counterContext.Provider>
     </div>
